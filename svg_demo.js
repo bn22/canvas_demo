@@ -10,11 +10,18 @@ $(document).ready(function(){
   var paper = Raphael('raphael',600,600); //put in the #raphael div
 
   //drawing
+  var rect = paper.rect(50, 60, 100, 150).attr ({
+      'fill' : PURPLE,
+      'stroke' : GOLD,
+      'stroke-width' : 4
+    });
 
-
-
-
-
+ rect.click(function(){
+    rect.animation ( {
+        fill : GOLD,
+        
+    })
+ })
 
 
 });
